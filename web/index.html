@@ -1,46 +1,135 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="$FLUTTER_BASE_HREF">
-
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FunkoPiece</title>
 
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="funko_catalog">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0A2647;
+      overflow: hidden;
+    }
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+    .splash-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0A2647 0%, #144272 100%);
+      z-index: 9999;
+      transition: opacity 0.8s ease-in-out; /* Dissolvenza leggermente più lenta per eleganza */
+      pointer-events: none; /* Evita che blocchi i click una volta invisibile */
+    }
 
-  <title>funko_catalog</title>
-  <link rel="manifest" href="manifest.json">
+    .splash-content {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .splash-logo {
+      width: 180px;
+      height: auto;
+      margin-bottom: 25px;
+      animation: pulse 2.5s infinite ease-in-out;
+      display: block;
+    }
+
+    .splash-title {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      color: white;
+      margin: 0;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .loading-bar-container {
+      width: 140px;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.1);
+      margin-top: 30px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .loading-bar-progress {
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      animation: loading 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.95; }
+      50% { transform: scale(1.05); opacity: 1; }
+    }
+
+    @keyframes loading {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    /* Nasconde l'indicatore di caricamento predefinito di Flutter se presente */
+    .flutter-loader {
+      display: none !important;
+    }
+  </style>
 </head>
 <body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
+  <div id="splash-screen" class="splash-container">
+    <div class="splash-content">
+      <img src="assets/logo.png" class="splash-logo" alt="Logo">
+      
+      <h1 class="splash-title">FunkoPiece</h1>
+      
+      <div class="loading-bar-container">
+        <div class="loading-bar-progress"></div>
+      </div>
+    </div>
+  </div>
 
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
-  <script src="flutter_bootstrap.js" async></script>
+  <script src="flutter.js" defer></script>
+  <script>
+    window.addEventListener('load', function() {
+      const startTime = Date.now();
+      const minDuration = 3000; // Durata dello splash screen (3 secondi)
+
+      _flutter.loader.loadEntrypoint({
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+            
+            const elapsed = Date.now() - startTime;
+            const remaining = Math.max(0, minDuration - elapsed);
+
+            // CORREZIONE QUI: Sintassi corretta per l'opacità
+            setTimeout(function() {
+              const s = document.getElementById('splash-screen');
+              if (s) {
+                s.style.opacity = '0'; // Cambiato da s.style(...) a s.style.opacity
+                setTimeout(() => {
+                  s.remove();
+                }, 800); // Rimuove dal DOM dopo la dissolvenza
+              }
+            }, remaining);
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>

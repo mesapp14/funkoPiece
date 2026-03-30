@@ -253,39 +253,39 @@ class _FunkoCardState extends State<FunkoCard>
                   
                   // --- PALLINO POSSEDUTO (SINISTRA) ---
                   // --- PALLINO POSSEDUTO (SINISTRA) ---
-Positioned(
-  top: 20,
-  left: 20,
-  child: GestureDetector(
-    onTap: _toggleOwnedStatus,
-    child: AnimatedContainer(
-      duration: const Duration(milliseconds: 300),
-      width: 28,
-      height: 28,
-      decoration: BoxDecoration(
-        color: _isOwned ? colorGreen : colorRed,
-        shape: BoxShape.circle, // <-- CORRETTO QUI
-        border: Border.all(color: Colors.white, width: 2.5),
-        boxShadow: [
-          BoxShadow(
-            color: (_isOwned ? colorGreen : colorRed).withOpacity(0.4),
-            blurRadius: 8,
-            spreadRadius: 2,
-          )
-        ],
-      ),
-      child: Icon(
-        _isOwned ? Icons.check : Icons.close,
-        size: 14,
-        color: Colors.white,
-      ),
-    ),
-  ),
-),
-                  // --- NUMBER BADGE (DESTRA) ---
                   Positioned(
                     top: 20,
                     right: 20,
+                    child: GestureDetector(
+                      onTap: _toggleOwnedStatus,
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 300),
+                        width: 28,
+                        height: 28,
+                        decoration: BoxDecoration(
+                          color: _isOwned ? colorGreen : colorRed,
+                          shape: BoxShape.circle, // <-- CORRETTO QUI
+                          border: Border.all(color: Colors.white, width: 2.5),
+                          boxShadow: [
+                            BoxShadow(
+                              color: (_isOwned ? colorGreen : colorRed).withOpacity(0.4),
+                              blurRadius: 8,
+                              spreadRadius: 2,
+                            )
+                          ],
+                        ),
+                        child: Icon(
+                          _isOwned ? Icons.check : Icons.close,
+                          size: 14,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                  // --- NUMBER BADGE (DESTRA) ---
+                  Positioned(
+                    top: 20,
+                    left: 20,
                     child: Container(
                       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
                       decoration: BoxDecoration(
