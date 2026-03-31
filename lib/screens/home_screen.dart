@@ -6,7 +6,6 @@ import '../services/funko_service.dart';
 import '../widgets/funko_card.dart'; 
 import 'package:flutter/services.dart';
 
-// Palette Deep Sea raffinata
 const Color colorDarkNavy = Color(0xFF0A2647);
 const Color colorMidBlue = Color(0xFF144272);
 const Color colorSteelBlue = Color(0xFF205295);
@@ -26,6 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
   
   int _selectedIndex = 0; 
   String _searchText = '';
+  bool _isGridView = false; // Stato per il toggle Lista/Griglia
 
   @override
   void initState() {
@@ -33,7 +33,6 @@ class _HomeScreenState extends State<HomeScreen> {
     _initLoad();
   }
 
-  // Caricamento iniziale
   Future<void> _initLoad() async {
     try {
       final funkos = await loadFunkos();
@@ -44,7 +43,6 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
-  // Funzione CRUCIALE: rilegge le SharedPreferences e aggiorna le liste
   Future<void> _applyFilters() async {
     final prefs = await SharedPreferences.getInstance();
     List<MapEntry<int, FunkoVariant>> tempAll = [];
@@ -52,7 +50,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
     for (var f in allFunkos) {
       for (var v in f.variants) {
-        // Verifica se posseduto
         final isOwned = prefs.getBool('owned_${f.number}_${v.name}') ?? false;
         
         bool matchesSearch = v.name.toLowerCase().contains(_searchText) ||
@@ -79,7 +76,6 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
-      // SFONDO CON GRADIENTE MODERNO
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -127,7 +123,6 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
-  // --- DASHBOARD HOME ---
   Widget _buildHomeDashboard() {
     int total = _totalCatalogCount;
     double progress = total > 0 ? (ownedVariants.length / total) : 0;
@@ -141,16 +136,11 @@ class _HomeScreenState extends State<HomeScreen> {
           _buildSectionTitle("LA TUA ROTTA"),
           const SizedBox(height: 15),
           _buildPercentContainer(progress, total),
-          
           const SizedBox(height: 35),
-          
           _buildSectionTitle("FORZIERE"),
           const SizedBox(height: 15),
           _buildHorizontalForziere(),
-
           const SizedBox(height: 35),
-
-          // Label "Logbook" eliminata come richiesto
           _buildRegistroBordoCard(),
           const SizedBox(height: 120),
         ],
@@ -162,7 +152,6 @@ class _HomeScreenState extends State<HomeScreen> {
     return Container(
       padding: const EdgeInsets.all(25),
       decoration: BoxDecoration(
-        // Gradiente interno alla card
         gradient: LinearGradient(
           colors: [colorMidBlue.withOpacity(0.6), colorDarkNavy.withOpacity(0.8)],
         ),
@@ -213,7 +202,6 @@ class _HomeScreenState extends State<HomeScreen> {
           return Container(
             width: 140,
             margin: const EdgeInsets.only(right: 15),
-            // GLASSMORPHISM CARD
             child: ClipRRect(
               borderRadius: BorderRadius.circular(25),
               child: BackdropFilter(
@@ -238,7 +226,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Text(
                           "#$num ${v.name}", 
                           maxLines: 1, 
-                          overflow: TextOverflow.ellipsis, // Gestione nomi lunghi (...)
+                          overflow: TextOverflow.ellipsis,
                           style: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.white),
                         ),
                       ),
@@ -287,26 +275,108 @@ class _HomeScreenState extends State<HomeScreen> {
     return Text(title, style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w800, letterSpacing: 1.5, color: colorCyanAccent));
   }
 
+  // --- LOGICA LISTA / GRIGLIA ---
   Widget _buildFunkoList() {
     return Column(
       children: [
-        _buildSearchBox(),
+        _buildSearchAndToggleBar(),
         Expanded(
-          child: ListView.builder(
-            padding: const EdgeInsets.only(bottom: 140), 
-            itemCount: displayVariants.length,
-            itemBuilder: (context, index) {
-              final entry = displayVariants[index];
-              final parent = allFunkos.firstWhere((f) => f.number == entry.key);
-              return FunkoCard(variant: entry.value, number: entry.key, saga: parent.saga, date: parent.date);
-            },
+          child: AnimatedSwitcher(
+            duration: const Duration(milliseconds: 350),
+            child: _isGridView ? _buildGrid() : _buildList(),
           ),
         ),
       ],
     );
   }
 
-  // --- SEZIONE FORZIERE (3D) ---
+  Widget _buildList() {
+    return ListView.builder(
+      key: const ValueKey("list_view"),
+      padding: const EdgeInsets.only(bottom: 140), 
+      itemCount: displayVariants.length,
+      itemBuilder: (context, index) {
+        final entry = displayVariants[index];
+        final parent = allFunkos.firstWhere((f) => f.number == entry.key);
+        return FunkoCard(
+          variant: entry.value, 
+          number: entry.key, 
+          saga: parent.saga, 
+          date: parent.date,
+          isGrid: false,
+        );
+      },
+    );
+  }
+
+  Widget _buildGrid() {
+    return GridView.builder(
+      key: const ValueKey("grid_view"),
+      padding: const EdgeInsets.fromLTRB(15, 0, 15, 140),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        mainAxisSpacing: 10,
+        crossAxisSpacing: 10,
+        childAspectRatio: 0.62, // Rapporto per far stare l'intera card
+      ),
+      itemCount: displayVariants.length,
+      itemBuilder: (context, index) {
+        final entry = displayVariants[index];
+        final parent = allFunkos.firstWhere((f) => f.number == entry.key);
+        return FunkoCard(
+          variant: entry.value, 
+          number: entry.key, 
+          saga: parent.saga, 
+          date: parent.date,
+          isGrid: true,
+        );
+      },
+    );
+  }
+
+  Widget _buildSearchAndToggleBar() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      child: Row(
+        children: [
+          // Search Bar stretta
+          Expanded(
+            child: TextField(
+              onChanged: (v) { _searchText = v.toLowerCase(); _applyFilters(); },
+              style: const TextStyle(color: Colors.white, fontSize: 14),
+              decoration: InputDecoration(
+                hintText: "Cerca tesori...",
+                hintStyle: const TextStyle(color: Colors.white24, fontSize: 14),
+                prefixIcon: const Icon(Icons.search, color: colorCyanAccent, size: 20),
+                filled: true,
+                contentPadding: const EdgeInsets.symmetric(vertical: 0),
+                fillColor: Colors.white.withOpacity(0.05),
+                border: OutlineInputBorder(borderRadius: BorderRadius.circular(15), borderSide: BorderSide.none),
+              ),
+            ),
+          ),
+          const SizedBox(width: 10),
+          // Toggle Icon
+          GestureDetector(
+            onTap: () => setState(() => _isGridView = !_isGridView),
+            child: Container(
+              height: 48,
+              width: 48,
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.05),
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: Icon(
+                _isGridView ? Icons.format_list_bulleted_rounded : Icons.grid_view_rounded,
+                color: colorCyanAccent,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   Widget _buildForziere3D() {
     if (ownedVariants.isEmpty) return const Center(child: Text("Forziere vuoto"));
     
@@ -343,24 +413,6 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _buildSearchBox() {
-    return Padding(
-      padding: const EdgeInsets.all(20),
-      child: TextField(
-        onChanged: (v) { _searchText = v.toLowerCase(); _applyFilters(); },
-        style: const TextStyle(color: Colors.white),
-        decoration: InputDecoration(
-          hintText: "Cerca tesori...",
-          hintStyle: const TextStyle(color: Colors.white24),
-          prefixIcon: const Icon(Icons.search, color: colorCyanAccent),
-          filled: true,
-          fillColor: Colors.white.withOpacity(0.05),
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(20), borderSide: BorderSide.none),
-        ),
-      ),
-    );
-  }
-
   Widget _buildBottomNav() {
     return Container(
       margin: const EdgeInsets.fromLTRB(20, 0, 20, 30),
@@ -387,7 +439,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return GestureDetector(
       onTap: () {
         setState(() => _selectedIndex = index);
-        _applyFilters(); // AGGIORNA I DATI OGNI VOLTA CHE CAMBI TAB
+        _applyFilters();
       },
       behavior: HitTestBehavior.opaque,
       child: Column(

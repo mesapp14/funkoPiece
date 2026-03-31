@@ -1,10 +1,9 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:shared_preferences/shared_preferences.dart'; // NECESSARIO PER IL LOCAL STORAGE
+import 'package:shared_preferences/shared_preferences.dart';
 import '../models/funko.dart'; 
 
-// Palette Colori
 const Color colorTealDark = Color(0xFF0A3038);
 const Color colorTealAccent = Color(0xFFFFFFFF); 
 const Color colorOffWhite = Color(0xFFF3F5F7);
@@ -16,6 +15,7 @@ class FunkoCard extends StatefulWidget {
   final int number;
   final String saga;
   final String date;
+  final bool isGrid; // Nuovo parametro per gestire il layout
 
   const FunkoCard({
     super.key,
@@ -23,6 +23,7 @@ class FunkoCard extends StatefulWidget {
     required this.number,
     this.saga = "Unknown",
     this.date = "N/A",
+    this.isGrid = false, // Default lista
   });
 
   @override
@@ -33,12 +34,12 @@ class _FunkoCardState extends State<FunkoCard>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _scaleAnimation;
-  bool _isOwned = false; // Stato del pallino
+  bool _isOwned = false;
 
   @override
   void initState() {
     super.initState();
-    _loadOwnedStatus(); // Carica lo stato dal local storage all'avvio
+    _loadOwnedStatus();
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 100),
@@ -48,36 +49,20 @@ class _FunkoCardState extends State<FunkoCard>
     );
   }
 
-  // --- LOGICA LOCAL STORAGE (ARMADIO) ---
-  
-  // Carica se il Funko è nell'armadio
   Future<void> _loadOwnedStatus() async {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
-      // Uso una chiave univoca basata sul numero e nome variante
       _isOwned = prefs.getBool('owned_${widget.number}_${widget.variant.name}') ?? false;
     });
   }
 
-  // Cambia lo stato e salva nel storage
   Future<void> _toggleOwnedStatus() async {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
       _isOwned = !_isOwned;
     });
     await prefs.setBool('owned_${widget.number}_${widget.variant.name}', _isOwned);
-    
-    // Feedback aptico per l'utente
     HapticFeedback.mediumImpact();
-    
-    // SnackBar opzionale per conferma
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(_isOwned ? "Aggiunto all'armadio! 📦" : "Rimosso dall'armadio"),
-        duration: const Duration(seconds: 1),
-        behavior: SnackBarBehavior.floating,
-      ),
-    );
   }
 
   @override
@@ -86,7 +71,6 @@ class _FunkoCardState extends State<FunkoCard>
     super.dispose();
   }
 
-  // --- POPUP DETTAGLIO (Qui rimane il TYPE) ---
   void _showDetailsPopup(BuildContext context) {
     showGeneralDialog(
       context: context,
@@ -120,15 +104,8 @@ class _FunkoCardState extends State<FunkoCard>
                     child: Hero(
                       tag: 'funko_hero_${widget.number}_${widget.variant.name}',
                       child: ColorFiltered(
-                        colorFilter: const ColorFilter.mode(
-                          colorOffWhite, 
-                          BlendMode.multiply,
-                        ),
-                        child: Image.network(
-                          widget.variant.image,
-                          height: 220,
-                          fit: BoxFit.contain, 
-                        ),
+                        colorFilter: const ColorFilter.mode(colorOffWhite, BlendMode.multiply),
+                        child: Image.network(widget.variant.image, height: 220, fit: BoxFit.contain),
                       ),
                     ),
                   ),
@@ -140,20 +117,15 @@ class _FunkoCardState extends State<FunkoCard>
                         Text(
                           "#${widget.number} ${widget.variant.name}",
                           textAlign: TextAlign.center,
-                          style: const TextStyle(
-                            fontWeight: FontWeight.w900,
-                            fontSize: 22,
-                            color: Colors.white,
-                          ),
+                          style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 22, color: Colors.white),
                         ),
                         const SizedBox(height: 16),
                         _buildDetailRow(Icons.auto_stories, "Saga", widget.saga),
                         _buildDetailRow(Icons.event, "Release", widget.date),
-                        // IL TYPE RESTA SOLO QUI
                         _buildDetailRow(Icons.layers, "Type", widget.variant.type.toUpperCase()),
                         const SizedBox(height: 24),
                         SizedBox(
-                          width: double.infinity,
+                           width: 150,
                           child: ElevatedButton(
                             onPressed: () => Navigator.pop(context),
                             style: ElevatedButton.styleFrom(
@@ -166,10 +138,7 @@ class _FunkoCardState extends State<FunkoCard>
                                 side: BorderSide(color: colorTealAccent.withOpacity(0.5)),
                               ),
                             ),
-                            child: const Text(
-                              "CLOSE",
-                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                            ),
+                            child: const Text("CLOSE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
                           ),
                         ),
                       ],
@@ -212,6 +181,11 @@ class _FunkoCardState extends State<FunkoCard>
 
   @override
   Widget build(BuildContext context) {
+    // Margini adattivi: più piccoli se in griglia
+    final margin = widget.isGrid 
+        ? const EdgeInsets.all(4) 
+        : const EdgeInsets.symmetric(horizontal: 24, vertical: 14);
+
     return GestureDetector(
       onTapDown: (_) => _controller.forward(),
       onTapUp: (_) => _controller.reverse(),
@@ -220,30 +194,29 @@ class _FunkoCardState extends State<FunkoCard>
       child: ScaleTransition(
         scale: _scaleAnimation,
         child: Container(
-          margin: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-          // Nel metodo build della FunkoCard...
-decoration: BoxDecoration(
-  gradient: const LinearGradient(
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-    colors: [
-      Color(0xFF144272), // Mid Blue
-      Color(0xFF0A2647), // Dark Navy
-    ],
-  ),
-  borderRadius: BorderRadius.circular(28),
-  border: Border.all(color: Colors.white.withOpacity(0.1), width: 1.5),
-  boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.2), blurRadius: 15, offset: const Offset(0, 8))],
-),
+          margin: margin,
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [Color(0xFF144272), Color(0xFF0A2647)],
+            ),
+            borderRadius: BorderRadius.circular(24),
+            border: Border.all(color: Colors.white.withOpacity(0.1), width: 1.5),
+            boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.2), blurRadius: 10, offset: const Offset(0, 5))],
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Stack(
                 children: [
                   AspectRatio(
-                    aspectRatio: 1.1,
+                    aspectRatio: widget.isGrid ? 1.0 : 1.1,
                     child: Padding(
-                      padding: const EdgeInsets.only(top: 45, left: 20, right: 40, bottom: 10),
+                      padding: EdgeInsets.only(
+                        top: widget.isGrid ? 35 : 45, 
+                        left: 15, right: 15, bottom: 5
+                      ),
                       child: Hero(
                         tag: 'funko_hero_${widget.number}_${widget.variant.name}',
                         child: ColorFiltered(
@@ -253,101 +226,86 @@ decoration: BoxDecoration(
                       ),
                     ),
                   ),
-                  
-                  // --- PALLINO POSSEDUTO (SINISTRA) ---
-                  // --- PALLINO POSSEDUTO (SINISTRA) ---
                   Positioned(
-                    top: 20,
-                    right: 20,
+                    top: 12,
+                    right: 12,
                     child: GestureDetector(
                       onTap: _toggleOwnedStatus,
                       child: AnimatedContainer(
                         duration: const Duration(milliseconds: 300),
-                        width: 28,
-                        height: 28,
+                        width: 24,
+                        height: 24,
                         decoration: BoxDecoration(
                           color: _isOwned ? colorGreen : colorRed,
-                          shape: BoxShape.circle, // <-- CORRETTO QUI
-                          border: Border.all(color: Colors.white, width: 2.5),
-                          boxShadow: [
-                            BoxShadow(
-                              color: (_isOwned ? colorGreen : colorRed).withOpacity(0.4),
-                              blurRadius: 8,
-                              spreadRadius: 2,
-                            )
-                          ],
+                          shape: BoxShape.circle,
+                          border: Border.all(color: Colors.white, width: 2),
                         ),
-                        child: Icon(
-                          _isOwned ? Icons.check : Icons.close,
-                          size: 14,
-                          color: Colors.white,
-                        ),
+                        child: Icon(_isOwned ? Icons.check : Icons.close, size: 12, color: Colors.white),
                       ),
                     ),
                   ),
-                  // --- NUMBER BADGE (DESTRA) ---
                   Positioned(
-                    top: 20,
-                    left: 20,
+                    top: 12,
+                    left: 12,
                     child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
-                        gradient: const LinearGradient(
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                          colors: [Color(0xFF387B86), Color(0xFF13424A)],
-                        ),
-                        borderRadius: BorderRadius.circular(100),
-                        border: Border.all(color: Colors.white.withOpacity(0.5), width: 1.5),
+                        color: Colors.black26,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(color: Colors.white12),
                       ),
                       child: Text(
                         '#${widget.number}',
-                        style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w900, fontSize: 14),
+                        style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w900, fontSize: 10),
                       ),
                     ),
                   ),
                 ],
               ),
-              
               Padding(
-                padding: const EdgeInsets.fromLTRB(24, 10, 24, 24),
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       widget.variant.name,
-                      style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w900, fontSize: 24, height: 1.1),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        color: Colors.white, 
+                        fontWeight: FontWeight.w900, 
+                        fontSize: widget.isGrid ? 16 : 22, 
+                        height: 1.1
+                      ),
                     ),
-                    const SizedBox(height: 24), // Spazio pulito (TYPE rimosso da qui)
-                    
-                    // Bottone VIEW DETAILS
-                    InkWell(
-                      onTap: () => _showDetailsPopup(context),
-                      borderRadius: BorderRadius.circular(100),
-                      child: ClipRRect(
+                    const SizedBox(height: 12),
+                    Center(
+                      child: InkWell(
+                        onTap: () => _showDetailsPopup(context),
                         borderRadius: BorderRadius.circular(100),
-                        child: BackdropFilter(
-                          filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-                          child: Container(
-                            width: double.infinity,
-                            padding: const EdgeInsets.symmetric(vertical: 14),
-                            decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(0.1),
-                              borderRadius: BorderRadius.circular(100),
-                              border: Border.all(color: colorTealAccent.withOpacity(0.6), width: 1.5),
-                            ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text("VIEW DETAILS", style: TextStyle(color: colorTealAccent.withOpacity(0.9), fontWeight: FontWeight.bold, fontSize: 14, letterSpacing: 1.2)),
-                                const SizedBox(width: 6),
-                                Icon(Icons.arrow_forward_ios, color: colorTealAccent.withOpacity(0.9), size: 14)
-                              ],
+                        
+                        child: Container(
+                          width: 150,
+                          padding: const EdgeInsets.symmetric(vertical: 10),
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.05),
+                            borderRadius: BorderRadius.circular(100),
+                            border: Border.all(color: colorTealAccent.withOpacity(0.3)),
+                          ),
+                          child: Center(
+                            child: Text("INFO",
+                              style: TextStyle(
+                                color: colorTealAccent.withOpacity(0.9), 
+                                fontWeight: FontWeight.bold, 
+                                fontSize: 14, 
+                                letterSpacing: 1.2,
+                                
+                              )
                             ),
                           ),
                         ),
                       ),
-                    ),
+                    )
                   ],
                 ),
               ),
