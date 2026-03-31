@@ -6,7 +6,7 @@ import '../models/funko.dart';
 
 // Palette Colori
 const Color colorTealDark = Color(0xFF0A3038);
-const Color colorTealAccent = Color(0xFF70D4D6); 
+const Color colorTealAccent = Color(0xFFFFFFFF); 
 const Color colorOffWhite = Color(0xFFF3F5F7);
 const Color colorRed = Color(0xFFE57373);
 const Color colorGreen = Color(0xFF81C784);
@@ -221,17 +221,20 @@ class _FunkoCardState extends State<FunkoCard>
         scale: _scaleAnimation,
         child: Container(
           margin: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-          decoration: BoxDecoration(
-            gradient: const LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [Color(0xFFF9F9F9), Color(0xFF86A8AB), Color(0xFF0A3038)],
-              stops: [0.35, 0.65, 1.0],
-            ),
-            borderRadius: BorderRadius.circular(28),
-            border: Border.all(color: Colors.white.withOpacity(0.4), width: 1.5),
-            boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.15), blurRadius: 20, offset: const Offset(0, 10))],
-          ),
+          // Nel metodo build della FunkoCard...
+decoration: BoxDecoration(
+  gradient: const LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [
+      Color(0xFF144272), // Mid Blue
+      Color(0xFF0A2647), // Dark Navy
+    ],
+  ),
+  borderRadius: BorderRadius.circular(28),
+  border: Border.all(color: Colors.white.withOpacity(0.1), width: 1.5),
+  boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.2), blurRadius: 15, offset: const Offset(0, 8))],
+),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
