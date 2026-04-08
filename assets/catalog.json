@@ -2,2286 +2,1273 @@
   {
     "name": "Monkey D. Luffy",
     "number": 98,
-    "saga": "East Blue",
     "date": "2016",
-    "variants": [
-      {
-        "name": "Monkey D. Luffy",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/4/44/Monkey_D._Luffy_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Tony Tony Chopper",
     "number": 99,
-    "saga": "Drum Island",
     "date": "2016",
-    "variants": [
-      {
-        "name": "Tony Tony Chopper",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/9/94/Tony_Tony_Chopper_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Tony Tony Chopper (Flocked) Funimation Con 2016",
-        "type": "flocked",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/3/37/Chopper_Flocked_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "flocked", "isChase": false } ]
   },
   {
     "name": "Portgas D. Ace",
     "number": 100,
-    "saga": "Marineford",
     "date": "2016",
-    "variants": [
-      {
-        "name": "Portgas D. Ace",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/2/27/Portgas_D._Ace_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Trafalgar Law",
     "number": 101,
-    "saga": "Dressrosa",
     "date": "2016",
-    "variants": [
-      {
-        "name": "Trafalgar Law",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/5/5e/Trafalgar_Law_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Luffy",
+    "name": "Luffy with Going Merry",
     "number": 111,
-    "saga": "Unknown",
     "date": "2022",
-    "variants": [
-      {
-        "name": "Luffy with Going Merry POP! Rides NYCC 2022 Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/d/d8/Luffy_With_Going_Merry_Funko_POP%21_Rides.png"
-      }
-    ]
+    "size": "Super Rides",
+    "category": "Riders",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Thousand Sunny",
+    "name": "Luffy with Thousand Sunny",
     "number": 114,
-    "saga": "Unknown",
     "date": "2022",
-    "variants": [
-      {
-        "name": "Luffy with Thousand Sunny POP! Rides CCXP 2022 Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/3/31/Luffy_With_Thousand_Sunny_Funko_POP%21_Rides.png"
-      }
-    ]
+    "size": "Super Rides",
+    "category": "Riders",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Polar Tang",
+    "name": "Trafalgar Law with Polar Tang",
     "number": 120,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Trafalgar Law with Polar Tang POP! Rides WonderCon 2023 Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/5/5b/Trafalgar_Law_With_Polar_Tang_Funko_POP%21_Rides.png"
-      }
-    ]
+    "size": "Super Rides",
+    "category": "Riders",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Whitebeard",
+    "name": "Whitebeard with Moby Dick",
     "number": 127,
-    "saga": "Marineford",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Whitebeard with Moby Dick POP! Rides Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/4/4f/Whitebeard_With_Moby_Dick_Funko_POP%21_127_Rides.png"
-      }
-    ]
+    "size": "Super Rides",
+    "category": "Riders",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Nami",
+    "name": "Nami with White Hobby Horse",
     "number": 128,
-    "saga": "East Blue",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Nami with White Hobby Horse POP! Rides WonderCon 2025 Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/6/61/Nami_With_White_Hobby_Horse_Funko_POP%21_128_Rides.png"
-      }
-    ]
+    "size": "Rides",
+    "category": "Riders",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Vivi",
+    "name": "Vivi & Karoo",
     "number": 129,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Vivi",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/b/bf/Vivi_%26_Karoo_Funko_POP%21_129_Rides.png"
-      }
-    ]
+    "size": "Rides",
+    "category": "Riders",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Nico Robin",
+    "name": "Nico Robin with Mini Merry II",
     "number": 132,
-    "saga": "Alabasta",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Nico Robin with Mini Merry II POP! Rides San Diego Comic-Con 2025 Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/2/2d/Robin_on_Mini_Merry_II_Funko_POP%21_132_Rides.png"
-      }
-    ]
+    "size": "Rides",
+    "category": "Riders",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Brook",
+    "name": "Brook with Shark Submerge",
     "number": 141,
-    "saga": "Thriller Bark",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Brook with Shark Submerge POP! Rides New York Comic-Con 2025 Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/c/cd/Brook_on_Shark_Submerge_Funko_POP%21_141_Rides.png"
-      }
-    ]
+    "size": "Rides",
+    "category": "Riders",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Roronoa Zoro",
     "number": 327,
-    "saga": "East Blue",
     "date": "2018",
-    "variants": [
-      {
-        "name": "Roronoa Zoro",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/c/c3/Roronoa_Zoro_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Roronoa Zoro (Glow) Kody Trading Exclusive",
-        "type": "glow",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/9/90/Roronoa_Zoro_Glow_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "glow", "isChase": false } ]
   },
   {
     "name": "Nami",
     "number": 328,
-    "saga": "East Blue",
     "date": "2018",
-    "variants": [
-      {
-        "name": "Nami",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/78/Nami_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Franky",
     "number": 329,
-    "saga": "Water 7",
     "date": "2018",
-    "variants": [
-      {
-        "name": "Franky",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/a/a3/Franky_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Boa Hancock",
     "number": 330,
-    "saga": "Unknown",
     "date": "2018",
-    "variants": [
-      {
-        "name": "Boa Hancock",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/3/38/Boa_Hancock_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Brook",
     "number": 358,
-    "saga": "Thriller Bark",
     "date": "2018",
-    "variants": [
-      {
-        "name": "Brook",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/8d/Brook_NYCC_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Vinsmoke Sanji",
     "number": 398,
-    "saga": "Unknown",
     "date": "2018",
-    "variants": [
-      {
-        "name": "Vinsmoke Sanji",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/7d/Sanji_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Nico Robin",
     "number": 399,
-    "saga": "Alabasta",
     "date": "2018",
-    "variants": [
-      {
-        "name": "Nico Robin",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/d/db/Nico_Robin_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Donquixote Doflamingo",
     "number": 400,
-    "saga": "Dressrosa",
     "date": "2018",
-    "variants": [
-      {
-        "name": "Donquixote Doflamingo",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/9/91/Donquixote_Doflamingo_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Usopp",
     "number": 401,
-    "saga": "East Blue",
     "date": "2018",
-    "variants": [
-      {
-        "name": "Usopp",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/e/ec/Usopp_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Buffed Chopper",
     "number": 918,
-    "saga": "Unknown",
     "date": "2021",
-    "variants": [
-      {
-        "name": "Buffed Chopper",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/a/a5/Buffed_Chopper_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Luffytaro",
     "number": 921,
-    "saga": "Unknown",
     "date": "2021",
-    "variants": [
-      {
-        "name": "Luffytaro",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/2/24/Luffytaro_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Luffytaro (Metallic) Hot Topic Exclusive",
-        "type": "metallic",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/b/bb/Luffytaro_Metallic_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "metallic", "isChase": false } ]
   },
   {
     "name": "Sabo",
     "number": 922,
-    "saga": "Dressrosa",
     "date": "2021",
-    "variants": [
-      {
-        "name": "Sabo",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/7c/Sabo_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Roronoa Zoro",
     "number": 923,
-    "saga": "East Blue",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Roronoa Zoro",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/e/e5/Zorojuro_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Roronoa Zoro (Glow-in-the-Dark) Box Warehouse Exclusive",
-        "type": "glow",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/6/62/Roronoa_Zoro_GITD_Funko_POP%21_1923_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "glow", "isChase": false } ]
   },
   {
     "name": "Bonekichi",
     "number": 924,
-    "saga": "Unknown",
     "date": "2021",
-    "variants": [
-      {
-        "name": "Bonekichi",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/8a/Bonekichi_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Crocodile",
     "number": 925,
-    "saga": "Unknown",
     "date": "2021",
-    "variants": [
-      {
-        "name": "Crocodile",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/6/6c/Crocodile_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Luffy Gear Four",
     "number": 926,
-    "saga": "Dressrosa",
     "date": "2021",
-    "variants": [
-      {
-        "name": "Luffy Gear Four Chalice Collectibles Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/f/f4/Luffy_Gear_Four_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Shanks",
     "number": 939,
-    "saga": "Unknown",
     "date": "2021",
-    "variants": [
-      {
-        "name": "Shanks Big Apple Collections Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/e/e0/Shanks_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Shanks (Chase Limited Edition) Big Apple Collections Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/5/5b/Shanks_Chase_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "Trafalgar Law",
     "number": 1016,
-    "saga": "Dressrosa",
     "date": "2021",
-    "variants": [
-      {
-        "name": "Trafalgar Law AAA Anime Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/d/da/Trafalgar_Law_AAA_Anime_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Trafalgar Law (Glow Chase Limited Edition) AAA Anime Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/c/c7/Trafalgar_Law_Glow_Chase_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "Samurai Brook",
     "number": 1129,
-    "saga": "Unknown",
     "date": "2022",
-    "variants": [
-      {
-        "name": "Samurai Brook Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/77/Samurai_Brook_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Samurai Brook (Metallic Chase Limited Edition) Funko Shop Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/d/d9/Samurai_Brook_Metallic_Chase_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "Armored Chopper",
     "number": 1131,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Armored Chopper Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/4/4a/Armored_Chopper_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Armored Chopper (Metallic Chase Limited Edition) Funko Shop Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/b/b7/Armored_Chopper_Metallic_Chase_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
-    "name": "Luffy",
+    "name": "Armored Luffy",
     "number": 1262,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Armored Luffy Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/14/Armored_Luffy_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Armored Luffy (Metallic Chase) Funko Shop Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/c/c0/Armored_Luffy_Metallic_Chase_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "Jinbe",
     "number": 1265,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Jinbe",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/5/57/Jinbe_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Jinbe (Chase)",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/c/c5/Jinbe_Chase_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
-    "name": "Snake-man",
+    "name": "Snake-man Luffy",
     "number": 1266,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Snake-man",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/e/e3/Snakeman_Luffy_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Snake-man Luffy (Metallic Version) Funko Shop Exclusive",
-        "type": "metallic",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/1f/Snakeman_Luffy_Metallic_Chase_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "metallic", "isChase": false } ]
   },
   {
     "name": "Kaido",
     "number": 1267,
-    "saga": "Wano",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Kaido",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/7e/Kaidou_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Super",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Big Mom",
+    "name": "Hungry Big Mom",
     "number": 1268,
-    "saga": "Whole Cake Island",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Big Mom",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/5/5f/Hungry_Big_Mom_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Super",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Gear Two",
+    "name": "Luffy Gear Two",
     "number": 1269,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Luffy Gear Two Fundom Collectibles Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/a/ac/Luffy_Gear_2_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Luffy Gear Two (Chase) Fundom Collectibles Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/e/e8/Luffy_Gear_2_Chase_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "Whitebeard",
     "number": 1270,
-    "saga": "Marineford",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Whitebeard Crunchyroll & GameStop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/14/Whitebeard_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Whitebeard (Chase) Crunchyroll & GameStop Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/4/4f/Whitebeard_Chase_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "Child Big Mom",
     "number": 1271,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Child Big Mom Specialty Series Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/d/d7/Child_Big_Mom_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Child Big Mom (Chase) Specialty Series Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/3/33/Child_Big_Mom_Chase_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Super",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
-    "name": "Homies",
+    "name": "Big Mom With Homies",
     "number": 1272,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Big Mom with Homies Galactic Toys Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/2/22/Big_Mom_with_Homies_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Super",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Red Hawk",
+    "name": "Red Hawk Luffy",
     "number": 1273,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Red Hawk Luffy AAA Anime Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/0/0b/Red_Hawk_Luffy_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Red Hawk Luffy (Glow-in-the-Dark Chase) AAA Anime Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/1c/Red_Hawk_Luffy_GITD_Chase_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "glow", "isChase": true } ]
   },
   {
     "name": "Gol D. Roger",
     "number": 1274,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Gol D. Roger Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/a/a6/Gol_D._Roger_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Gol D. Roger (Chase) Funko Shop Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/16/Gol_D._Roger_Chase_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Gol D. Roger (Gold) Fundays 2024 Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/76/Gol_D._Roger_Gold_Funko_POP%21_1274_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true }, { "type": "exclusive", "isChase": false } ]
   },
   {
     "name": "Oden",
     "number": 1275,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Oden ToyStops Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/6/6d/Oden_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Buggy the Clown",
     "number": 1276,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Buggy the Clown Hot Topic Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/c/cb/Buggy_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Soba Mask",
     "number": 1277,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Soba Mask Chalice Collectibles Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/12/Soba_Mask_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Soba Mask (Translucent Chase) Chalice Collectibles Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/6/60/Soba_Mask_Translucent_Chase_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "Eustass Kid",
     "number": 1287,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Eustass Kid WonderCon 2023 Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/4/43/Eustass_Kid_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Zoro (Enma) (Glow-in-the-Dark)",
+    "name": "Zoro (Enma)",
     "number": 1288,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Zoro (Enma) (Glow-in-the-Dark) Chalice Collectibles Exclusive",
-        "type": "glow",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/83/Zoro_%28Enma%29_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "glow", "isChase": false } ]
   },
   {
-    "name": "Ace",
+    "name": "Ace Wanted Poster",
     "number": 1291,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Ace Wanted Poster Hot Topic Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/e/ec/Ace_%28Wanted_Poster%29_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Poster",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Yamato",
     "number": 1316,
-    "saga": "Wano",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Yamato Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/2/22/Yamato_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Yamato (Chase Limited Edition) Funko Shop Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/d/d6/Yamato_Funko_POP%21_Animation_Chase.png"
-      }
-    ]
+    "size": "Poster",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
-    "name": "Gol D. Roger",
+    "name": "Gol D. Roger Wanted Poster",
     "number": 1379,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Gol D. Roger Wanted Poster SDCC Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/6/6a/Gol_D._Roger_%28Wanted_Poster%29_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Poster",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Shanks Wanted Poster",
     "number": 1401,
-    "saga": "Unknown",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Shanks Wanted Poster C2E2 2024 Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/0/04/Shanks_%28Wanted_Poster%29_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Poster",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Monkey D. Luffy Wanted Poster",
     "number": 1459,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Monkey D. Luffy Wanted Poster NYCC Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/18/Monkey_D._Luffy_%28Wanted_Poster%29_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Poster",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Chopperemon",
     "number": 1471,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Chopperemon",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/d/df/Chopperemon_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Chopperemon (Flocked) Funko Shop Exclusive",
-        "type": "flocked",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/11/Chopperemon_Flocked_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "flocked", "isChase": false } ]
   },
   {
     "name": "Onami",
     "number": 1472,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Onami",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/b/bf/Onami_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Sangoro",
     "number": 1473,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Sangoro",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/6/64/Sangoro_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Usohachi",
     "number": 1474,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Usohachi",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/2/2d/Usohachi_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Orobi",
     "number": 1475,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Orobi",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/5/51/Orobi_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Franosuke",
     "number": 1476,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Franosuke",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/7e/Franosuke_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Marco",
     "number": 1477,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Marco Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/8e/Marco_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Carrot",
     "number": 1487,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Carrot Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/83/Carrot_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Carrot (Glow) Funko Shop Exclusive",
-        "type": "glow",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/8e/Carrot_Glow_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "glow", "isChase": true } ]
   },
   {
     "name": "Roronoa Zoro",
     "number": 1496,
-    "saga": "East Blue",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Roronoa Zoro Hot Topic Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/74/Roronoa_Zoro_Nothing_Happened_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Sniper King",
     "number": 1514,
-    "saga": "Unknown",
     "date": "2023",
-    "variants": [
-      {
-        "name": "Sniper King Chalice Collectibles Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/3/3a/Sniper_King_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Sniper King (Chase Limited Edition) Chalice Collectibles Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/f/f4/Sniper_King_Chase_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "Dracule Mihawk",
     "number": 1521,
-    "saga": "Unknown",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Dracule Mihawk Funko Shop 2024 Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/2/2f/Dracule_Mihawk_Funko_POP%21_1521_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Caesar Clown",
     "number": 1584,
-    "saga": "Unknown",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Caesar Clown C2E2 2024 Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/c/ce/Caesar_Clown_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Carrot",
     "number": 1588,
-    "saga": "Unknown",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Carrot",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/8e/Carrot_Funko_POP%21_1588_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Yamato",
     "number": 1596,
-    "saga": "Wano",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Yamato",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/79/Yamato_Human-Beast_Form_Funko_POP%21_1596_Animation.png"
-      },
-      {
-        "name": "Yamato (Human-Beast Form) (Glow)",
-        "type": "glow",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/c/c6/Yamato_Human-Beast_Form_%28Glow%29_Funko_POP%21_1596_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "glow", "isChase": false } ]
   },
   {
     "name": "Katakuri",
     "number": 1606,
-    "saga": "Unknown",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Katakuri",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/a/a1/Katakuri_Funko_POP%21_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Luffy",
+    "name": "Luffy Gear 5",
     "number": 1607,
-    "saga": "Unknown",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Luffy",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/6/62/Luffy_Gear_Five_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Luffy Gear Five (Glow)",
-        "type": "glow",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/7e/Luffy_Gear_Five_Glow_Funko_POP%21_Animation.png"
-      },
-      {
-        "name": "Luffy",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/3/36/Luffy_Gear_Five_POP%21_%26_Tee.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "glow", "isChase": true }, { "type": "tshirt", "isChase": false } ]
   },
   {
     "name": "Luffy Uppercutting",
     "number": 1620,
-    "saga": "Unknown",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Luffy Uppercutting BoxLunch Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/f/fc/Luffy_Uppercut_Funko_POP%21_1620_Animation.png"
-      }
-    ]
-  },
-  {
-    "name": "Luffy (Gear 5)",
-    "number": 1621,
-    "saga": "Unknown",
-    "date": "2024",
-    "variants": [
-      {
-        "name": "Luffy (Gear 5) GameStop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/1e/Luffy_Gear_5_%28Laughing%29_Funko_POP%21_1621_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Kaido",
     "number": 1623,
-    "saga": "Wano",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Kaido (Dragon Form) GameStop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/4/42/Kaidou_Dragon_Form_Funko_POP%21_1623_Animation.png"
-      }
-    ]
+    "size": "Super",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Kaido",
     "number": 1624,
-    "saga": "Wano",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Kaido",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/2/2d/Kaidou_Human-Beast_Form_Funko_POP%21_1624_Animation.png"
-      }
-    ]
+    "size": "Super",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Monkey D. Luffy",
+    "name": "Monkey D. Luffy Trains Kung Fu Dugong",
     "number": 1637,
-    "saga": "East Blue",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Monkey D. Luffy Trains Kung Fu Dugong Crunchyroll Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/b/b3/Monkey_D._Luffy_Trains_Kung_Fu_Dugong_Funko_POP%21_Moment_1637_Animation.png"
-      }
-    ]
+    "size": "Moment",
+    "category": "Moment",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Corazon",
     "number": 1709,
-    "saga": "Unknown",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Corazon AAA Anime Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/b/bc/Corazon_Funko_POP%21_1709_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Reiju",
     "number": 1741,
-    "saga": "Unknown",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Reiju FunKon 2024 and Chalice Collectibles Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/7e/Reiju_Funko_POP%21_1741_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Monkey D. Luffy",
     "number": 1771,
-    "saga": "East Blue",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Monkey D. Luffy",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/3/33/Monkey_D._Luffy_Funko_POP%21_1771_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Nami",
     "number": 1772,
-    "saga": "East Blue",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Nami",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/2/2d/Nami_Funko_POP%21_1772_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Sanji",
     "number": 1773,
-    "saga": "East Blue",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Sanji",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/2/28/Sanji_Funko_POP%21_1773_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Usopp",
     "number": 1774,
-    "saga": "East Blue",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Usopp",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/e/ea/Usopp_Funko_POP%21_1774_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Roronoa Zoro",
     "number": 1775,
-    "saga": "East Blue",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Roronoa Zoro",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/6/69/Roronoa_Zoro_Funko_POP%21_1775_Animation.png"
-      },
-      {
-        "name": "Roronoa Zoro (Chase)",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/b/b5/Roronoa_Zoro_Chase_Funko_POP%21_1775_Animation.png"
-      },
-      {
-        "name": "East Blue Saga 4-Pack, with metallic Roronoa Zoro",
-        "type": "metallic",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/9/9c/Funko_POP%21_East_Blue_Saga_4-Pack.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "General Franky",
     "number": 1776,
-    "saga": "Unknown",
     "date": "2024",
-    "variants": [
-      {
-        "name": "General Franky Chalice Collectibles Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/0/0f/General_Franky_Funko_POP%21_1776_Animation.png"
-      },
-      {
-        "name": "General Franky (Chase) Chalice Collectibles Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/3/34/General_Franky_Chase_Funko_POP%21_1776_Animation.png"
-      }
-    ]
+    "size": "Super",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "glow", "isChase": true } ]
   },
   {
-    "name": "Nami",
+    "name": "Nami Wanted Poster",
     "number": 1777,
-    "saga": "East Blue",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Nami Wanted Poster Target Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/e/ee/Nami_Funko_POP%21_1777_Animation.png"
-      }
-    ]
+    "size": "Poster",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Buggy the Genius Jester",
     "number": 1778,
-    "saga": "Unknown",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Buggy the Genius Jester Chalice Collectibles Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/b/bc/Buggy_the_Genius_Jester_Funko_POP%21_Animation_1778.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Arlong",
     "number": 1779,
-    "saga": "Unknown",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Arlong AAA Anime Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/b/b0/Arlong_Funko_POP%21_1779_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Borsalino",
     "number": 1786,
-    "saga": "Unknown",
     "date": "2024",
-    "variants": [
-      {
-        "name": "Borsalino AAA Anime Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/b/b7/Borsalino_Funko_POP%21_1786_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Portgas D. Ace",
     "number": 1818,
-    "saga": "Marineford",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Portgas D. Ace Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/78/Portgas_D._Ace_Funko_POP%21_1818_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Monkey D. Garp",
     "number": 1850,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Monkey D. Garp Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/15/Monkey_D._Garp_Funko_POP%21_1850_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Bartholomew Kuma",
     "number": 1876,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Bartholomew Kuma WonderCon 2025 Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/e/e8/Bartholomew_Kuma_Funko_POP%21_1876_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Monkey D. Luffy",
     "number": 1877,
-    "saga": "East Blue",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Monkey D. Luffy (Post-War) Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/6/63/Monkey_D._Luffy_Funko_POP%21_1877_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Monkey D. Luffy",
     "number": 1878,
-    "saga": "East Blue",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Monkey D. Luffy",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/79/Monkey_D._Luffy_Funko_POP%21_1878_Television.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Television",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Zoro",
     "number": 1879,
-    "saga": "Unknown",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Zoro",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/f/f9/Zoro_Funko_POP%21_1879_Television.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Television",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Nami",
     "number": 1880,
-    "saga": "East Blue",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Nami",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/87/Nami_Funko_POP%21_1880_Television.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Television",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Sanji",
     "number": 1881,
-    "saga": "East Blue",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Sanji",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/1d/Sanji_Funko_POP%21_1881_Television.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Television",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Usopp",
     "number": 1882,
-    "saga": "East Blue",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Usopp",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/c/c2/Usopp_Funko_POP%21_1882_Television.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Television",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Tony Tony Chopper",
     "number": 1883,
-    "saga": "Drum Island",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Tony Tony Chopper",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/f/f5/Tony_Tony_Chopper_Funko_POP%21_1883_Television.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Television",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Miss All Sunday",
     "number": 1884,
-    "saga": "Unknown",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Miss All Sunday Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/d/d8/Miss_All_Sunday_Funko_POP%21_2156_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Television",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "King",
     "number": 1893,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "King",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/d/dd/King_Funko_POP%21_1893_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Plus",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Trafalgar Law",
     "number": 1894,
-    "saga": "Dressrosa",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Trafalgar Law",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/1b/Trafalgar_Law_Funko_POP%21_1894_Animation.png"
-      },
-      {
-        "name": "Trafalgar Law (Glow-in-the-Dark) Hot Topic Exclusive",
-        "type": "glow",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/2/29/Trafalgar_Law_GITD_Funko_POP%21_1894_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "glow", "isChase": false } ]
   },
   {
     "name": "Killer",
     "number": 1895,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Killer Amazon Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/c/ce/Killer_Funko_POP%21_1895_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Bepo",
     "number": 1896,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Bepo (Flocked) AAA Anime Exclusive",
-        "type": "flocked",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/a/a0/Bepo_Funko_POP%21_1896_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "flocked", "isChase": false } ]
   },
   {
-    "name": "Monkey D. Luffy",
+    "name": "Monkey D. Luffy (Bronze Statue)",
     "number": 1900,
-    "saga": "East Blue",
-    "date": "Bronze Statues",
-    "variants": [
-      {
-        "name": "Monkey D. Luffy",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/0/09/Monkey_D._Luffy_Funko_POP%21_1900_Animation.png"
-      }
-    ]
+    "date": "2025",
+    "size": "Regular",
+    "category": "Plus",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Roronoa Zoro",
+    "name": "Roronoa Zoro (Bronze Statue)",
     "number": 1901,
-    "saga": "East Blue",
-    "date": "Bronze Statues",
-    "variants": [
-      {
-        "name": "Roronoa Zoro",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/c/ca/Roronoa_Zoro_Funko_POP%21_1901_Animation.png"
-      }
-    ]
+    "date": "2025",
+    "size": "Regular",
+    "category": "Plus",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Boa Hancock",
     "number": 1905,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Boa Hancock (POP! Plus) Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/f/fa/Boa_Hancock_Funko_POP%21_1905_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Plus",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Emporio Ivankov",
     "number": 1906,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Emporio Ivankov Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/0/0c/Emporio_Ivankov_Funko_POP%21_1906_Animation.png"
-      },
-      {
-        "name": "Emporio Ivankov (Chase) Funko Shop Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/81/Emporio_Ivankov_Chase_Funko_POP%21_1906_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "Sakazuki",
     "number": 1913,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Sakazuki GameStop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/2/2a/Sakazuki_Funko_POP%21_1913_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Smoker",
     "number": 1914,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Smoker Chalice Collectibles Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/9/92/Smoker_Funko_POP%21_1914_Animation.png"
-      },
-      {
-        "name": "Smoker (Chase) Chalice Collectibles Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/5/5b/Smoker_Chase_Funko_POP%21_1914_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Plus",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "Big Mom",
     "number": 1915,
-    "saga": "Whole Cake Island",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Big Mom",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/9/91/Big_Mom_Funko_POP%21_1915_Animation.png"
-      },
-      {
-        "name": "Big Mom (Chase) (Super POP!)",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/8c/Big_Mom_Chase_Funko_POP%21_1915_Animation.png"
-      }
-    ]
+    "size": "Super",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "Marshall D. Teach",
     "number": 1921,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Marshall D. Teach Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/10/Marshall_D._Teach_Funko_POP%21_1921_Animation.png"
-      },
-      {
-        "name": "Marshall D. Teach (Chase) Funko Shop Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/71/Marshall_D._Teach_Chase_Funko_POP%21_1921_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "Eustass Kid",
     "number": 1932,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Eustass Kid",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/b/b9/Eustass_Kid_Funko_POP%21_1932_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Koby",
     "number": 1943,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Koby Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/c/c3/Koby_Funko_POP%21_1943_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Monkey D. Luffy",
     "number": 1945,
-    "saga": "East Blue",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Monkey D. Luffy",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/4/43/Monkey_D._Luffy_10_inch_Funko_POP%21_1945_Animation.png"
-      }
-    ]
+    "size": "Jumbo",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Tony Tony Chopper",
     "number": 1946,
-    "saga": "Drum Island",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Tony Tony Chopper GameStop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/d/d4/Tony_Tony_Chopper_Funko_POP%21_1946_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Roronoa Zoro",
+    "name": "Roronoa Zoro vs King",
     "number": 1954,
-    "saga": "East Blue",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Roronoa Zoro vs. King GameStop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/b/ba/Roronoa_Zoro_vs._King_Funko_POP%21_Moments_1954_Animation.png"
-      }
-    ]
+    "size": "Moment",
+    "category": "Moment",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Rob Lucci",
     "number": 1997,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Rob Lucci with Hattori Toy Temple Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/e/ee/Rob_Lucci_with_Hattori_Funko_POP%21_1997_Animation.png"
-      },
-      {
-        "name": "Rob Lucci with Hattori (Chase) Toy Temple Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/d/dc/Rob_Lucci_with_Hattori_Chase_Funko_POP%21_1997_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
-    "name": "Nami",
+    "name": "Nami (Bronze Statue)",
     "number": 2015,
-    "saga": "East Blue",
-    "date": "Bronze Statues",
-    "variants": [
-      {
-        "name": "Nami",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/3/30/Nami_Funko_POP%21_2015_Animation.png"
-      }
-    ]
+    "date": "2025",
+    "size": "Regular",
+    "category": "Plus",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Usopp",
+    "name": "Usopp (Bronze Statue)",
     "number": 2016,
-    "saga": "East Blue",
-    "date": "Bronze Statues",
-    "variants": [
-      {
-        "name": "Usopp",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/4/48/Usopp_Funko_POP%21_2016_Animation.png"
-      }
-    ]
+    "date": "2025",
+    "size": "Regular",
+    "category": "Plus",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Sanji",
+    "name": "Sanji (Bronze Statue)",
     "number": 2017,
-    "saga": "East Blue",
-    "date": "Bronze Statues",
-    "variants": [
-      {
-        "name": "Sanji",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/84/Sanji_Funko_POP%21_2017_Animation.png"
-      }
-    ]
+    "date": "2025",
+    "size": "Regular",
+    "category": "Plus",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Tony Tony Chopper",
+    "name": "Tony Tony Chopper (Bronze Statue)",
     "number": 2018,
-    "saga": "Drum Island",
-    "date": "Bronze Statues",
-    "variants": [
-      {
-        "name": "Tony Tony Chopper",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/2/2c/Tony_Tony_Chopper_Funko_POP%21_2018_Animation.png"
-      }
-    ]
+    "date": "2025",
+    "size": "Regular",
+    "category": "Plus",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Nami",
     "number": 2036,
-    "saga": "East Blue",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Nami Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/4/4d/Nami_Funko_POP%21_2036_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Monkey D. Luffy",
     "number": 2052,
-    "saga": "East Blue",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Monkey D. Luffy Entertainment Earth Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/7c/Monkey_D._Luffy_Funko_POP%21_2052_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Kuzan",
     "number": 2057,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Kuzan GameStop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/e/e1/Kuzan_Funko_POP%21_2057_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Sanji",
     "number": 2087,
-    "saga": "East Blue",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Sanji GameStop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/f/f8/Sanji_Funko_POP%21_2087_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Usopp",
+    "name": "Usopp Wanted Poster",
     "number": 2107,
-    "saga": "East Blue",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Usopp Wanted Poster Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/5/59/Usopp_Funko_POP%21_2107_Animation.png"
-      }
-    ]
+    "size": "Poster",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Sabo",
     "number": 2108,
-    "saga": "Dressrosa",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Sabo",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/9/9e/Sabo_Funko_POP%21_2108_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Roronoa Zoro",
+    "name": "Roronoa Zoro Wanted Poster",
     "number": 2124,
-    "saga": "East Blue",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Roronoa Zoro Wanted Poster Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/a/a3/Roronoa_Zoro_Funko_POP%21_2124_Animation.png"
-      }
-    ]
+    "size": "Poster",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Portgas D. Ace",
     "number": 2130,
-    "saga": "Marineford",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Portgas D. Ace Chalice Collectibles Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/6/68/Portgas_D._Ace_Funko_POP%21_2130_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Edison",
     "number": 2135,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Edison Amazon Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/a/aa/Edison_Funko_POP%21_2135_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Charlotte Pudding",
     "number": 2136,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Charlotte Pudding Chalice Collectibles Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/b/b3/Charlotte_Pudding_Funko_POP%21_2136_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Nico Robin",
     "number": 2137,
-    "saga": "Alabasta",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Nico Robin",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/2/2d/Nico_Robin_Funko_POP%21_2137_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Monkey D. Luffy",
     "number": 2138,
-    "saga": "East Blue",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Monkey D. Luffy",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/1f/Monkey_D._Luffy_Funko_POP%21_2138_Animation.png"
-      },
-      {
-        "name": "Monkey D. Luffy (Metallic) POP! Plus Hot Topic Exclusive",
-        "type": "metallic",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/0/0f/Monkey_D._Luffy_Metallic_Funko_POP%21_2138_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Plus",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "metallic", "isChase": false } ]
   },
   {
     "name": "Vegapunk",
     "number": 2139,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Vegapunk",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/f/f9/Vegapunk_Funko_POP%21_2139_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Rob Lucci",
     "number": 2140,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Rob Lucci New York Comic-Con 2025 Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/1a/Rob_Lucci_Funko_POP%21_2140_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Brook",
     "number": 2147,
-    "saga": "Thriller Bark",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Brook",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/10/Brook_Funko_POP%21_2147_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Tony Tony Chopper",
     "number": 2148,
-    "saga": "Drum Island",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Tony Tony Chopper",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/5/56/Tony_Tony_Chopper_Funko_POP%21_2148_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Sanji",
+    "name": "Lilith",
     "number": 2149,
-    "saga": "East Blue",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Sanji",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/73/Sanji_Funko_POP%21_2149_Animation.png"
-      },
-      {
-        "name": "Lilith Target Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/89/Lilith_Funko_POP%21_2149_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }]
   },
   {
     "name": "Silvers Rayleigh",
     "number": 2150,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Silvers Rayleigh Chalice Collectibles Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/6/6f/Silvers_Rayleigh_Funko_POP%21_2150_Animation.png"
-      },
-      {
-        "name": "Silvers Rayleigh (Chase) Chalice Collectibles Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/0/00/Silvers_Rayleigh_Chase_Funko_POP%21_2150_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Plus",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "Roronoa Zoro",
     "number": 2151,
-    "saga": "East Blue",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Roronoa Zoro Amazon Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/4/42/Roronoa_Zoro_Funko_POP%21_2151_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Boa Hancock",
     "number": 2156,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Boa Hancock CCXP 2025 Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/9/9d/Boa_Hancock_Funko_POP%21_2156_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Shanks",
     "number": 2166,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Shanks",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/5/55/Shanks_Funko_POP%21_2166_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Monkey D. Garp",
     "number": 2172,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Monkey D. Garp Chalice Collectibles Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/b/b2/Monkey_D._Garp_Funko_POP%21_2172_Animation.png"
-      },
-      {
-        "name": "Monkey D. Garp (Chase) Chalice Collectibles Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/d/d6/Monkey_D._Garp_Chase_Funko_POP%21_2172_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "glow", "isChase": true } ]
   },
   {
-    "name": "Luffy",
+    "name": "Luffy Gear 5",
     "number": 2177,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Luffy Gear 5 GameStop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/7e/Luffy_Gear_5_Funko_POP%21_2177_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "glow", "isChase": false } ]
   },
   {
     "name": "Roronoa Zoro",
     "number": 2178,
-    "saga": "East Blue",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Roronoa Zoro Hot Topic Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/a/a1/Roronoa_Zoro_Funko_POP%21_2178_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Nico Robin",
+    "name": "Nico Robin (Bronze Statue)",
     "number": 2179,
-    "saga": "Alabasta",
-    "date": "Bronze Statues",
-    "variants": [
-      {
-        "name": "Nico Robin",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/7a/Nico_Robin_Funko_POP%21_2180_Animation.png"
-      }
-    ]
+    "date": "2025",
+    "size": "Regular",
+    "category": "Plus",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Franky",
+    "name": "Franky (Bronze Statue)",
     "number": 2180,
-    "saga": "Water 7",
-    "date": "Bronze Statues",
-    "variants": [
-      {
-        "name": "Franky",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/3/31/Franky_Funko_POP%21_2179_Animation.png"
-      }
-    ]
+    "date": "2025",
+    "size": "Regular",
+    "category": "Plus",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Ginny",
     "number": 2205,
-    "saga": "Unknown",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Ginny",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/88/Ginny_Funko_POP%21_2205_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Monkey D. Dragon",
     "number": 2206,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "Monkey D. Dragon Chronotoys Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/3/38/Monkey_D._Dragon_Funko_POP%21_2206_Animation.png"
-      },
-      {
-        "name": "Monkey D. Dragon (Chase) Chronotoys Exclusive",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/5/54/Monkey_D._Dragon_Chase_Funko_POP%21_2206_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "St. Jaygarcia Saturn",
     "number": 2207,
-    "saga": "Unknown",
     "date": "2025",
-    "variants": [
-      {
-        "name": "St. Jaygarcia Saturn",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/75/St._Jaygarcia_Saturn_10_inch_Funko_POP%21_2207_Animation.png"
-      }
-    ]
+    "size": "Jumbo",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Monkey D. Luffy",
     "number": 2214,
-    "saga": "East Blue",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Monkey D. Luffy Entertainment Earth Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/a/ad/Monkey_D._Luffy_Funko_POP%21_2214_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Brook",
+    "name": "Brook (Bronze Statue)",
     "number": 2215,
-    "saga": "Thriller Bark",
-    "date": "Bronze Statues",
-    "variants": [
-      {
-        "name": "Brook",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/e/ee/Brook_Funko_POP%21_2215_Animation.png"
-      }
-    ]
+    "date": "2026",
+    "size": "Regular",
+    "category": "Plus",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
-    "name": "Jinbe",
+    "name": "Jinbe (Bronze Statue)",
     "number": 2216,
-    "saga": "Unknown",
-    "date": "Bronze Statues",
-    "variants": [
-      {
-        "name": "Jinbe",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/d/d9/Jinbe_Funko_POP%21_2216_Animation.png"
-      }
-    ]
+    "date": "2026",
+    "size": "Regular",
+    "category": "Plus",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Monkey D. Luffy",
     "number": 2217,
-    "saga": "East Blue",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Monkey D. Luffy Chronotoys Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/6/61/Monkey_D._Luffy_Funko_POP%21_2217_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Kuro",
     "number": 2225,
-    "saga": "Unknown",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Kuro",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/c/c7/Kuro_Funko_POP%21_2225_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Brook",
     "number": 2231,
-    "saga": "Thriller Bark",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Brook",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/1/18/Brook_Funko_POP%21_2231_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Franky",
     "number": 2232,
-    "saga": "Water 7",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Franky",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/8b/Franky_Funko_POP%21_2232_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Nico Robin",
     "number": 2233,
-    "saga": "Alabasta",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Nico Robin",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/d/d4/Nico_Robin_Funko_POP%21_2233_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Bartolomeo",
     "number": 2234,
-    "saga": "Unknown",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Bartolomeo Funko Shop Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/88/Bartolomeo_Funko_POP%21_2234_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   },
   {
     "name": "Bon Clay",
     "number": 2235,
-    "saga": "Unknown",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Bon Clay Chalice Collectibles Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/7e/Bon_Clay_Funko_POP%21_2235_Animation.png"
-      },
-      {
-        "name": "Bon Clay Chalice Collectibles Exclusive",
-        "type": "exclusive",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/8/83/Bon_Clay_Chase_Funko_POP%21_2235_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
   },
   {
     "name": "Jewelry Bonney",
     "number": 2255,
-    "saga": "Unknown",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Jewelry Bonney",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/7/7b/Jewelry_Bonney_Funko_POP%21_2255_Animation.png"
-      },
-      {
-        "name": "Jewelry Bonney (Chase)",
-        "type": "chase",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/b/b0/Jewelry_Bonney_Chase_Funko_POP%21_2255_Animation.png"
-      }
-    ]
+    "size": "Regular",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "glow", "isChase": true } ]
   },
   {
     "name": "Tony Tony Chopper",
     "number": 2347,
-    "saga": "Drum Island",
     "date": "2026",
-    "variants": [
-      {
-        "name": "Tony Tony Chopper",
-        "type": "base",
-        "image": "https://static.wikia.nocookie.net/onepiece/images/3/3f/Tony_Tony_Chopper_10_inch_Funko_POP%21_2347_Animation.png"
-      }
-    ]
+    "size": "Jumbo",
+    "category": "Animation",
+    "variants": [ { "type": "standard", "isChase": false } ]
   }
 ]

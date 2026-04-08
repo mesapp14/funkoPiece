@@ -4,7 +4,6 @@ import 'dart:ui';
 import '../models/funko.dart'; 
 import '../services/funko_service.dart'; 
 import '../widgets/funko_card.dart'; 
-import 'package:flutter/services.dart';
 
 const Color colorDarkNavy = Color(0xFF0A2647);
 const Color colorMidBlue = Color(0xFF144272);
@@ -68,7 +67,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   int get _totalCatalogCount {
     int count = 0;
-    for (var f in allFunkos) count += f.variants.length;
+    for (var f in allFunkos) {
+      count += f.variants.length;
+    }
     return count;
   }
 
