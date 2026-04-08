@@ -52,7 +52,7 @@ class ListPage extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        childAspectRatio: 0.58,
+        childAspectRatio: 0.70,
         crossAxisSpacing: 12,
         mainAxisSpacing: 12,
       ),
