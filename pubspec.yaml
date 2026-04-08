@@ -91,5 +91,6 @@ flutter:
   assets:
     - assets/catalog.json
     - assets/images/
+    - assets/funkoType/
 
     

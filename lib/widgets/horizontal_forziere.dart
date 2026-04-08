@@ -62,13 +62,14 @@ class HorizontalForziere extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.fromLTRB(10, 0, 10, 15),
                         child: Text(
-                          "#$num ${v.name}",
+                          "#$num ${v.type}${v.isChase ? ' 🔥 Chase' : ''}",
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(
-                              fontSize: 11,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white),
+                            fontSize: 11,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ],

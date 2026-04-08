@@ -229,7 +229,7 @@
     "date": "2021",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Trafalgar Law",
@@ -237,7 +237,7 @@
     "date": "2021",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Samurai Brook",
@@ -245,7 +245,7 @@
     "date": "2022",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Armored Chopper",
@@ -253,7 +253,7 @@
     "date": "2023",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Armored Luffy",
@@ -261,7 +261,7 @@
     "date": "2023",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Jinbe",
@@ -269,7 +269,7 @@
     "date": "2023",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Snake-man Luffy",
@@ -301,7 +301,7 @@
     "date": "2023",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Whitebeard",
@@ -309,7 +309,7 @@
     "date": "2023",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Child Big Mom",
@@ -317,7 +317,7 @@
     "date": "2023",
     "size": "Super",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Big Mom With Homies",
@@ -341,7 +341,7 @@
     "date": "2023",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true }, { "type": "exclusive", "isChase": false } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true }, { "type": "exclusive", "isChase": false } ]
   },
   {
     "name": "Oden",
@@ -365,7 +365,7 @@
     "date": "2023",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Eustass Kid",
@@ -397,7 +397,7 @@
     "date": "2023",
     "size": "Poster",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Gol D. Roger Wanted Poster",
@@ -501,7 +501,7 @@
     "date": "2023",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Dracule Mihawk",
@@ -637,7 +637,7 @@
     "date": "2024",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "General Franky",
@@ -829,7 +829,7 @@
     "date": "2025",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Sakazuki",
@@ -845,7 +845,7 @@
     "date": "2025",
     "size": "Regular",
     "category": "Plus",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Big Mom",
@@ -853,7 +853,7 @@
     "date": "2025",
     "size": "Super",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Marshall D. Teach",
@@ -861,7 +861,7 @@
     "date": "2025",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Eustass Kid",
@@ -909,7 +909,7 @@
     "date": "2025",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Nami (Bronze Statue)",
@@ -1085,7 +1085,7 @@
     "date": "2025",
     "size": "Regular",
     "category": "Plus",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Roronoa Zoro",
@@ -1165,7 +1165,7 @@
     "date": "2025",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "St. Jaygarcia Saturn",
@@ -1253,7 +1253,7 @@
     "date": "2026",
     "size": "Regular",
     "category": "Animation",
-    "variants": [ { "type": "standard", "isChase": false }, { "type": "", "isChase": true } ]
+    "variants": [ { "type": "standard", "isChase": false }, { "type": "chase", "isChase": true } ]
   },
   {
     "name": "Jewelry Bonney",

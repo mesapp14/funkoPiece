@@ -49,12 +49,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
     for (var f in allFunkos) {
       for (var v in f.variants) {
-        final isOwned = prefs.getBool('owned_${f.number}_${v.name}') ?? false;
+        // Chiave per saved preferences aggiornata
+        final isOwned = prefs.getBool('owned_${f.number}_${v.type}') ?? false;
 
         bool matchesSearch =
-            v.name.toLowerCase().contains(searchText) ||
+            v.type.toLowerCase().contains(searchText) ||
             f.number.toString().contains(searchText) ||
-            f.saga.toLowerCase().contains(searchText);
+            f.category.toLowerCase().contains(searchText);
 
         if (matchesSearch) tempAll.add(MapEntry(f.number, v));
         if (isOwned) tempOwned.add(MapEntry(f.number, v));
@@ -118,7 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
           key: const ValueKey(0),
           ownedVariants: ownedVariants,
           total: totalCatalogCount,
-          allFunkos: allFunkos, // <-- Aggiungi questa riga
+          allFunkos: allFunkos,
         );
       case 1:
         return ListPage(

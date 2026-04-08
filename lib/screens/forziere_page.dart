@@ -18,7 +18,7 @@ class ForzierePage extends StatelessWidget {
     }
 
     return ListWheelScrollView.useDelegate(
-      itemExtent: 350,
+      itemExtent: 150,
       childDelegate: ListWheelChildBuilderDelegate(
         childCount: ownedVariants.length,
         builder: (_, i) {
@@ -26,9 +26,23 @@ class ForzierePage extends StatelessWidget {
           final parent = allFunkos.firstWhere((f) => f.number == e.key);
 
           return Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Expanded(child: Image.network(e.value.image)),
-              Text("#${parent.number} ${e.value.name}")
+              // Qui non abbiamo più l'immagine, quindi possiamo mostrare solo testo
+              Text(
+                "#${parent.number} ${parent.name}",
+                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                "${e.value.type}${e.value.isChase ? ' 🔥 Chase' : ''}",
+                style: const TextStyle(fontSize: 16),
+              ),
+              const SizedBox(height: 2),
+              Text(
+                "Categoria: ${parent.category}, Size: ${parent.size}",
+                style: const TextStyle(fontSize: 14, color: Colors.grey),
+              ),
             ],
           );
         },

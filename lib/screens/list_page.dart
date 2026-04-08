@@ -39,7 +39,7 @@ class ListPage extends StatelessWidget {
         return FunkoCard(
           variant: e.value,
           number: e.key,
-          saga: parent.saga,
+          funkoName: parent.name, // <-- aggiunto
           date: parent.date,
           isGrid: false,
         );
@@ -48,29 +48,27 @@ class ListPage extends StatelessWidget {
   }
 
   Widget _grid() {
-    return Expanded(
-  child: GridView.builder(
-    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-      crossAxisCount: 2,
-      childAspectRatio: 0.58,
-      crossAxisSpacing: 12,
-      mainAxisSpacing: 12,
-    ),
-    itemCount: displayVariants.length,
-    itemBuilder: (_, i) {
-      final e = displayVariants[i];
-      final parent = allFunkos.firstWhere((f) => f.number == e.key);
+    return GridView.builder(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        childAspectRatio: 0.58,
+        crossAxisSpacing: 12,
+        mainAxisSpacing: 12,
+      ),
+      itemCount: displayVariants.length,
+      itemBuilder: (_, i) {
+        final e = displayVariants[i];
+        final parent = allFunkos.firstWhere((f) => f.number == e.key);
 
-      return FunkoCard(
-        variant: e.value,
-        number: e.key,
-        saga: parent.saga,
-        date: parent.date,
-        isGrid: true,
-      );
-    },
-  ),
-);
+        return FunkoCard(
+          variant: e.value,
+          number: e.key,
+          funkoName: parent.name, // <-- aggiunto
+          date: parent.date,
+          isGrid: true,
+        );
+      },
+    );
   }
 }
