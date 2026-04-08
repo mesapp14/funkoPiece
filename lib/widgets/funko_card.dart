@@ -105,45 +105,60 @@ class _FunkoCardState extends State<FunkoCard>
                       tag: 'funko_hero_${widget.number}_${widget.variant.name}',
                       child: ColorFiltered(
                         colorFilter: const ColorFilter.mode(colorOffWhite, BlendMode.multiply),
-                        child: Image.network(widget.variant.image, height: 220, fit: BoxFit.contain),
+                        child: Image.asset(
+                                            'assets/images/${widget.number}.png',  // path locale
+                                            fit: BoxFit.contain,
+                                            errorBuilder: (_, _, _) => const Icon(Icons.image_not_supported, color: Colors.white24, size: 40),
+                                          ),
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(24),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(
-                          "#${widget.number} ${widget.variant.name}",
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 22, color: Colors.white),
-                        ),
-                        const SizedBox(height: 16),
-                        _buildDetailRow(Icons.auto_stories, "Saga", widget.saga),
-                        _buildDetailRow(Icons.event, "Release", widget.date),
-                        _buildDetailRow(Icons.layers, "Type", widget.variant.type.toUpperCase()),
-                        const SizedBox(height: 24),
-                        SizedBox(
-                           width: 150,
-                          child: ElevatedButton(
-                            onPressed: () => Navigator.pop(context),
-                            style: ElevatedButton.styleFrom(
-                              padding: const EdgeInsets.symmetric(vertical: 16),
-                              backgroundColor: Colors.white.withOpacity(0.1),
-                              foregroundColor: colorTealAccent,
-                              elevation: 0,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(16),
-                                side: BorderSide(color: colorTealAccent.withOpacity(0.5)),
+                 Padding(
+                          padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                widget.variant.name,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  color: Colors.white, 
+                                  fontWeight: FontWeight.w900, 
+                                  fontSize: widget.isGrid ? 15 : 22, 
+                                  height: 1.1
+                                ),
                               ),
-                            ),
-                            child: const Text("CLOSE", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+                              SizedBox(height: widget.isGrid ? 18 : 12), // spazio maggiore per INFO in griglia
+                              Center(
+                                child: InkWell(
+                                  onTap: () => _showDetailsPopup(context),
+                                  borderRadius: BorderRadius.circular(100),
+                                  child: Container(
+                                    width: 150,
+                                    padding: const EdgeInsets.symmetric(vertical: 10),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.05),
+                                      borderRadius: BorderRadius.circular(100),
+                                      border: Border.all(color: colorTealAccent.withOpacity(0.3)),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "INFO",
+                                        style: TextStyle(
+                                          color: colorTealAccent.withOpacity(0.9), 
+                                          fontWeight: FontWeight.bold, 
+                                          fontSize: 14, 
+                                          letterSpacing: 1.2,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
                           ),
-                        ),
-                      ],
-                    ),
-                  ),
+                        )
                 ],
               ),
             ),
@@ -183,8 +198,12 @@ class _FunkoCardState extends State<FunkoCard>
   Widget build(BuildContext context) {
     // Margini adattivi: più piccoli se in griglia
     final margin = widget.isGrid 
-        ? const EdgeInsets.all(4) 
+        ? const EdgeInsets.all(2) 
         : const EdgeInsets.symmetric(horizontal: 24, vertical: 14);
+
+    final imagePadding = widget.isGrid 
+        ? const EdgeInsets.all(8)  // ridotto da 15/45
+        : const EdgeInsets.fromLTRB(15, 45, 15, 5);
 
     return GestureDetector(
       onTapDown: (_) => _controller.forward(),
@@ -214,14 +233,21 @@ class _FunkoCardState extends State<FunkoCard>
                     aspectRatio: widget.isGrid ? 1.0 : 1.1,
                     child: Padding(
                       padding: EdgeInsets.only(
-                        top: widget.isGrid ? 35 : 45, 
-                        left: 15, right: 15, bottom: 5
-                      ),
+                                                top: widget.isGrid ? 20 : 45,  // ridotto da 35/45 -> immagine più bassa
+                                                left: 15,
+                                                right: 15,
+                                                bottom: 5,
+                                              ),
                       child: Hero(
                         tag: 'funko_hero_${widget.number}_${widget.variant.name}',
                         child: ColorFiltered(
                           colorFilter: const ColorFilter.mode(Color(0xFFF9F9F9), BlendMode.multiply),
-                          child: Image.network(widget.variant.image, fit: BoxFit.contain),
+                          child: Image.asset(
+                                                    'assets/images/${widget.number}.png',
+                                                    height: 220,
+                                                    fit: BoxFit.contain,
+                                                    errorBuilder: (_, _, _) => const Icon(Icons.image_not_supported, color: Colors.white24, size: 40),
+                                                  ),
                         ),
                       ),
                     ),
@@ -274,11 +300,11 @@ class _FunkoCardState extends State<FunkoCard>
                       style: TextStyle(
                         color: Colors.white, 
                         fontWeight: FontWeight.w900, 
-                        fontSize: widget.isGrid ? 16 : 22, 
+                        fontSize: widget.isGrid ? 15 : 22, 
                         height: 1.1
                       ),
                     ),
-                    const SizedBox(height: 12),
+                    SizedBox(height: widget.isGrid ? 18 : 12),
                     Center(
                       child: InkWell(
                         onTap: () => _showDetailsPopup(context),
