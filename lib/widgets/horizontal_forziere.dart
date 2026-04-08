@@ -34,10 +34,10 @@ class HorizontalForziere extends StatelessWidget {
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
                 child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.07),
+                 decoration: BoxDecoration(
+                    color: Colors.white.withValues(alpha: 0.07),
                     borderRadius: BorderRadius.circular(25),
-                    border: Border.all(color: Colors.white.withOpacity(0.1)),
+                    border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,

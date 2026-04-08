@@ -18,8 +18,8 @@ class BottomNav extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.fromLTRB(20, 0, 20, 30),
       height: 75,
-      decoration: BoxDecoration(
-        color: colorDarkNavy.withOpacity(0.9),
+     decoration: BoxDecoration(
+        color: colorDarkNavy.withValues(alpha: 0.9),
         borderRadius: BorderRadius.circular(35),
       ),
       child: Row(

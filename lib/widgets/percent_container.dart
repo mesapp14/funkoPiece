@@ -22,10 +22,13 @@ class PercentContainer extends StatelessWidget {
       padding: const EdgeInsets.all(25),
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [colorMidBlue.withOpacity(0.6), colorDarkNavy.withOpacity(0.8)],
+          colors: [
+            colorMidBlue.withValues(alpha: 0.6),
+            colorDarkNavy.withValues(alpha: 0.8)
+          ],
         ),
         borderRadius: BorderRadius.circular(30),
-        border: Border.all(color: Colors.white.withOpacity(0.05)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.05)),
       ),
       child: Column(
         children: [
@@ -47,7 +50,7 @@ class PercentContainer extends StatelessWidget {
             child: LinearProgressIndicator(
               value: progress,
               minHeight: 10,
-              backgroundColor: Colors.white.withOpacity(0.05),
+              backgroundColor: Colors.white.withValues(alpha: 0.05),
               valueColor: const AlwaysStoppedAnimation<Color>(colorCyanAccent),
             ),
           ),

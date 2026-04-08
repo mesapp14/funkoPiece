@@ -27,8 +27,7 @@
       align-items: center;
       background: linear-gradient(135deg, #0A2647 0%, #144272 100%);
       z-index: 9999;
-      transition: opacity 0.8s ease-in-out; /* Dissolvenza leggermente più lenta per eleganza */
-      pointer-events: none; /* Evita che blocchi i click una volta invisibile */
+      transition: opacity 0.8s ease-in-out;
     }
 
     .splash-content {
@@ -43,7 +42,6 @@
       height: auto;
       margin-bottom: 25px;
       animation: pulse 2.5s infinite ease-in-out;
-      display: block;
     }
 
     .splash-title {
@@ -83,47 +81,47 @@
       100% { transform: translateX(100%); }
     }
 
-    /* Nasconde l'indicatore di caricamento predefinito di Flutter se presente */
     .flutter-loader {
       display: none !important;
     }
   </style>
 </head>
+
 <body>
+  <!-- SPLASH SCREEN -->
   <div id="splash-screen" class="splash-container">
     <div class="splash-content">
       <img src="assets/logo.png" class="splash-logo" alt="Logo">
-      
       <h1 class="splash-title">FunkoPiece</h1>
-      
+
       <div class="loading-bar-container">
         <div class="loading-bar-progress"></div>
       </div>
     </div>
   </div>
 
+  <!-- FLUTTER -->
   <script src="flutter.js" defer></script>
+
+  <!-- BOOTSTRAP CORRETTO -->
   <script>
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
       const startTime = Date.now();
-      const minDuration = 3000; // Durata dello splash screen (3 secondi)
+      const minDuration = 1000;
 
       _flutter.loader.loadEntrypoint({
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
             appRunner.runApp();
-            
+
             const elapsed = Date.now() - startTime;
             const remaining = Math.max(0, minDuration - elapsed);
 
-            // CORREZIONE QUI: Sintassi corretta per l'opacità
-            setTimeout(function() {
-              const s = document.getElementById('splash-screen');
-              if (s) {
-                s.style.opacity = '0'; // Cambiato da s.style(...) a s.style.opacity
-                setTimeout(() => {
-                  s.remove();
-                }, 800); // Rimuove dal DOM dopo la dissolvenza
+            setTimeout(function () {
+              const splash = document.getElementById('splash-screen');
+              if (splash) {
+                splash.style.opacity = '0';
+                setTimeout(() => splash.remove(), 800);
               }
             }, remaining);
           });

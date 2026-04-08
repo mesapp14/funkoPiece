@@ -10,10 +10,10 @@ class RegistroCard extends StatelessWidget {
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(25),
-      decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.04),
+     decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.04),
         borderRadius: BorderRadius.circular(30),
-        border: Border.all(color: Colors.white.withOpacity(0.05)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.05)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

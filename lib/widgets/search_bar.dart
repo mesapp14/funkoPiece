@@ -30,7 +30,7 @@ class SearchBarWidget extends StatelessWidget {
                 prefixIcon: const Icon(Icons.search, color: colorCyanAccent, size: 20),
                 filled: true,
                 contentPadding: const EdgeInsets.symmetric(vertical: 0),
-                fillColor: Colors.white.withOpacity(0.05),
+                fillColor: Colors.white.withValues(alpha: 0.05),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
                   borderSide: BorderSide.none,
@@ -45,7 +45,7 @@ class SearchBarWidget extends StatelessWidget {
               height: 48,
               width: 48,
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.05),
+                color: Colors.white.withValues(alpha: 0.05),
                 borderRadius: BorderRadius.circular(15),
               ),
               child: Icon(
