@@ -43,31 +43,36 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Future<void> applyFilters() async {
-    final prefs = await SharedPreferences.getInstance();
-    List<MapEntry<int, FunkoVariant>> tempAll = [];
-    List<MapEntry<int, FunkoVariant>> tempOwned = [];
+  final prefs = await SharedPreferences.getInstance();
+  List<MapEntry<int, FunkoVariant>> tempAll = [];
+  List<MapEntry<int, FunkoVariant>> tempOwned = [];
 
-    for (var f in allFunkos) {
-      for (var v in f.variants) {
-        // Chiave per saved preferences aggiornata
-        final isOwned = prefs.getBool('owned_${f.number}_${v.type}') ?? false;
+  final query = searchText.toLowerCase().trim();
 
-        bool matchesSearch =
-            v.type.toLowerCase().contains(searchText) ||
-            f.number.toString().contains(searchText) ||
-            f.category.toLowerCase().contains(searchText);
+  for (var f in allFunkos) {
+    for (var v in f.variants) {
+      final isOwned = prefs.getBool('owned_${f.number}_${v.type}') ?? false;
 
-        if (matchesSearch) tempAll.add(MapEntry(f.number, v));
+      // Ricerca Full-Text su più campi
+      bool matchesSearch = 
+          f.name.toLowerCase().contains(query) ||
+          f.number.toString().contains(query) ||
+          f.category.toLowerCase().contains(query) ||
+          f.date.toLowerCase().contains(query) ||
+          v.type.toLowerCase().contains(query);
+
+      if (matchesSearch) {
+        tempAll.add(MapEntry(f.number, v));
         if (isOwned) tempOwned.add(MapEntry(f.number, v));
       }
     }
-
-    setState(() {
-      displayVariants = tempAll;
-      ownedVariants = tempOwned;
-    });
   }
 
+  setState(() {
+    displayVariants = tempAll;
+    ownedVariants = tempOwned;
+  });
+}
   int get totalCatalogCount {
     int count = 0;
     for (var f in allFunkos) {

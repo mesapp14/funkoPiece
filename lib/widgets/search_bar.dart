@@ -1,18 +1,40 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 
 const Color colorCyanAccent = Color(0xFFFFFFFF);
 
-class SearchBarWidget extends StatelessWidget {
+class SearchBarWidget extends StatefulWidget {
   final Function(String) onSearch;
   final VoidCallback onToggle;
   final bool isGrid;
 
   const SearchBarWidget({
-    super.key,
+    Key? key,
     required this.onSearch,
     required this.onToggle,
     required this.isGrid,
-  });
+  }) : super(key: key);
+
+  @override
+  State<SearchBarWidget> createState() => _SearchBarWidgetState();
+}
+
+class _SearchBarWidgetState extends State<SearchBarWidget> {
+  Timer? _debounce;
+
+  void _onChanged(String value) {
+    if (_debounce?.isActive ?? false) _debounce!.cancel();
+
+    _debounce = Timer(const Duration(milliseconds: 300), () {
+      widget.onSearch(value);
+    });
+  }
+
+  @override
+  void dispose() {
+    _debounce?.cancel();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -22,15 +44,25 @@ class SearchBarWidget extends StatelessWidget {
         children: [
           Expanded(
             child: TextField(
-              onChanged: (v) => onSearch(v),
-              style: const TextStyle(color: Colors.white, fontSize: 14),
+              onChanged: _onChanged,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 14,
+              ),
               decoration: InputDecoration(
                 hintText: "Cerca tesori...",
-                hintStyle: const TextStyle(color: Colors.white24, fontSize: 14),
-                prefixIcon: const Icon(Icons.search, color: colorCyanAccent, size: 20),
+                hintStyle: const TextStyle(
+                  color: Colors.white24,
+                  fontSize: 14,
+                ),
+                prefixIcon: const Icon(
+                  Icons.search,
+                  color: colorCyanAccent,
+                  size: 20,
+                ),
                 filled: true,
-                contentPadding: const EdgeInsets.symmetric(vertical: 0),
                 fillColor: Colors.white.withValues(alpha: 0.05),
+                contentPadding: const EdgeInsets.symmetric(vertical: 0),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
                   borderSide: BorderSide.none,
@@ -40,7 +72,7 @@ class SearchBarWidget extends StatelessWidget {
           ),
           const SizedBox(width: 10),
           GestureDetector(
-            onTap: onToggle,
+            onTap: widget.onToggle,
             child: Container(
               height: 48,
               width: 48,
@@ -49,7 +81,9 @@ class SearchBarWidget extends StatelessWidget {
                 borderRadius: BorderRadius.circular(15),
               ),
               child: Icon(
-                isGrid ? Icons.format_list_bulleted_rounded : Icons.grid_view_rounded,
+                widget.isGrid
+                    ? Icons.format_list_bulleted_rounded
+                    : Icons.grid_view_rounded,
                 color: colorCyanAccent,
               ),
             ),
