@@ -61,7 +61,7 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
                   size: 20,
                 ),
                 filled: true,
-                fillColor: Colors.white.withValues(alpha: 0.05),
+                fillColor: Colors.white.withOpacity(0.05),
                 contentPadding: const EdgeInsets.symmetric(vertical: 0),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
@@ -77,7 +77,7 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
               height: 48,
               width: 48,
               decoration: BoxDecoration(
-                color: Colors.white.withValues(alpha: 0.05),
+                color: Colors.white.withOpacity(0.05),
                 borderRadius: BorderRadius.circular(15),
               ),
               child: Icon(

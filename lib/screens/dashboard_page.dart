@@ -57,7 +57,10 @@ class DashboardPage extends StatelessWidget {
               HorizontalForziere(ownedVariants: ownedVariants),
             ],
           ),
-               const RegistroCard(),
+          RegistroCard(
+            ownedVariants: ownedVariants,
+            allFunkos: allFunkos,
+          ),
           LastReleasesCarousel(allFunkos: allFunkos),
 
 

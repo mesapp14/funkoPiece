@@ -118,34 +118,31 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _currentPage() {
-    switch (selectedIndex) {
-      case 0:
-        return DashboardPage(
-          key: const ValueKey(0),
-          ownedVariants: ownedVariants,
-          total: totalCatalogCount,
-          allFunkos: allFunkos,
-        );
-      case 1:
-        return ListPage(
-          key: const ValueKey(1),
-          displayVariants: displayVariants,
-          allFunkos: allFunkos,
-          isGrid: isGridView,
-          onToggle: () => setState(() => isGridView = !isGridView),
-          onSearch: (v) {
-            searchText = v.toLowerCase();
-            applyFilters();
-          },
-        );
-      case 2:
-        return ForzierePage(
-          key: const ValueKey(2),
-          ownedVariants: ownedVariants,
-          allFunkos: allFunkos,
-        );
-      default:
-        return const SizedBox();
-    }
+  switch (selectedIndex) {
+    case 0:
+      return DashboardPage(
+        key: const ValueKey(0),
+        ownedVariants: ownedVariants,
+        total: totalCatalogCount,
+        allFunkos: allFunkos,
+      );
+    case 1:
+      return ListPage(
+        key: const ValueKey(1),
+        allFunkos: allFunkos,
+        allVariants: allFunkos
+            .expand((f) => f.variants.map((v) => MapEntry(f.number, v)))
+            .toList(),
+        isGridInitial: isGridView,
+      );
+    case 2:
+      return ForzierePage(
+        key: const ValueKey(2),
+        ownedVariants: ownedVariants,
+        allFunkos: allFunkos,
+      );
+    default:
+      return const SizedBox();
   }
+}
 }

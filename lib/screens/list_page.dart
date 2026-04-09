@@ -3,35 +3,75 @@ import '../../../models/funko.dart';
 import '../../../widgets/funko_card.dart';
 import '../widgets/search_bar.dart';
 
-class ListPage extends StatelessWidget { // Trasformato in StatelessWidget per semplicità
+class ListPage extends StatefulWidget {
   final List<Funko> allFunkos;
-  final List<MapEntry<int, FunkoVariant>> displayVariants; // Riceve i dati filtrati
-  final Function(String) onSearch; // Riceve la funzione di ricerca
-  final bool isGrid;
-  final VoidCallback onToggle;
+  final List<MapEntry<int, FunkoVariant>> allVariants; // Lista completa
+  final bool isGridInitial;
 
   const ListPage({
     super.key,
     required this.allFunkos,
-    required this.displayVariants,
-    required this.onSearch,
-    required this.isGrid,
-    required this.onToggle,
+    required this.allVariants,
+    this.isGridInitial = false,
   });
+
+  @override
+  State<ListPage> createState() => _ListPageState();
+}
+
+class _ListPageState extends State<ListPage> {
+  late List<MapEntry<int, FunkoVariant>> displayVariants;
+  late bool isGrid;
+
+  @override
+  void initState() {
+    super.initState();
+    displayVariants = List.from(widget.allVariants); // Copia dei dati
+    isGrid = widget.isGridInitial;
+  }
+
+  void _onSearch(String query) {
+    setState(() {
+      if (query.isEmpty) {
+        displayVariants = List.from(widget.allVariants);
+      } else {
+        displayVariants = widget.allVariants
+            .where((e) =>
+                e.value.type.toLowerCase().contains(query.toLowerCase()) ||
+                widget.allFunkos
+                    .firstWhere((f) => f.number == e.key)
+                    .name
+                    .toLowerCase()
+                    .contains(query.toLowerCase()))
+            .toList();
+      }
+    });
+  }
+
+  void _onToggle() {
+    setState(() {
+      isGrid = !isGrid;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         SearchBarWidget(
-          onSearch: onSearch, // Passa il comando al padre
-          onToggle: onToggle,
+          onSearch: _onSearch,
+          onToggle: _onToggle,
           isGrid: isGrid,
         ),
         Expanded(
-          child: displayVariants.isEmpty 
-            ? const Center(child: Text("Nessun Funko trovato", style: TextStyle(color: Colors.white)))
-            : (isGrid ? _grid() : _list()),
+          child: displayVariants.isEmpty
+              ? const Center(
+                  child: Text(
+                    "Nessun Funko trovato",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                )
+              : (isGrid ? _grid() : _list()),
         ),
       ],
     );
@@ -42,7 +82,7 @@ class ListPage extends StatelessWidget { // Trasformato in StatelessWidget per s
       itemCount: displayVariants.length,
       itemBuilder: (_, i) {
         final e = displayVariants[i];
-        final parent = allFunkos.firstWhere((f) => f.number == e.key);
+        final parent = widget.allFunkos.firstWhere((f) => f.number == e.key);
         return FunkoCard(
           variant: e.value,
           number: e.key,
@@ -66,7 +106,7 @@ class ListPage extends StatelessWidget { // Trasformato in StatelessWidget per s
       itemCount: displayVariants.length,
       itemBuilder: (_, i) {
         final e = displayVariants[i];
-        final parent = allFunkos.firstWhere((f) => f.number == e.key);
+        final parent = widget.allFunkos.firstWhere((f) => f.number == e.key);
         return FunkoCard(
           variant: e.value,
           number: e.key,
