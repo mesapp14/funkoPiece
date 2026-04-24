@@ -5,16 +5,20 @@ class WantedPoster extends StatefulWidget {
   final Uint8List? imageBytes;
   final String bounty;
   final VoidCallback onPickImage;
-  final Matrix4? initialTransform;
+  final TransformationController controller;
   final Function(Matrix4) onTransformChanged;
+
+  // 🔥 NEW: blocco scroll globale
+  final ValueChanged<bool>? onInteractionChange;
 
   const WantedPoster({
     super.key,
     required this.imageBytes,
     required this.bounty,
     required this.onPickImage,
-    required this.initialTransform,
+    required this.controller,
     required this.onTransformChanged,
+    this.onInteractionChange,
   });
 
   @override
@@ -22,24 +26,6 @@ class WantedPoster extends StatefulWidget {
 }
 
 class _WantedPosterState extends State<WantedPoster> {
-  late TransformationController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    // Inizializza il controller con la posizione salvata o quella standard
-    _controller = TransformationController(widget.initialTransform ?? Matrix4.identity());
-  }
-
-  @override
-  void didUpdateWidget(WantedPoster oldWidget) {
-    super.didUpdateWidget(oldWidget);
-    // Se l'immagine cambia (es. ne carichi una nuova), resettiamo la posizione
-    if (oldWidget.imageBytes != widget.imageBytes && widget.imageBytes != null) {
-      _controller.value = Matrix4.identity();
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -54,7 +40,6 @@ class _WantedPosterState extends State<WantedPoster> {
 
               return Stack(
                 children: [
-                  // 1. AREA FOTO (Sotto la cornice)
                   Positioned(
                     top: h * 0.18,
                     bottom: h * 0.33,
@@ -64,19 +49,34 @@ class _WantedPosterState extends State<WantedPoster> {
                       child: Container(
                         color: const Color(0xFFDCC8A9),
                         child: widget.imageBytes != null
-                            ? InteractiveViewer(
-                                transformationController: _controller,
-                                // Permette di muovere la foto anche fuori dai bordi per centrarla
-                                boundaryMargin: const EdgeInsets.all(300), 
-                                minScale: 0.1,
-                                maxScale: 5.0,
-                                onInteractionEnd: (details) {
-                                  // Quando l'utente finisce di spostare/zoomare, salviamo
-                                  widget.onTransformChanged(_controller.value);
-                                },
-                                child: Image.memory(
-                                  widget.imageBytes!,
-                                  fit: BoxFit.contain, // Usiamo contain così l'utente ha il controllo totale
+                            ? Listener(
+                                // 🔥 BLOCCO WHEEL PASS-THROUGH (WEB FIX)
+                                onPointerSignal: (_) {},
+                                child: InteractiveViewer(
+                                  transformationController:
+                                      widget.controller,
+                                  boundaryMargin:
+                                      const EdgeInsets.all(300),
+                                  minScale: 0.1,
+                                  maxScale: 5.0,
+                                  panEnabled: true,
+                                  scaleEnabled: true,
+
+                                  onInteractionStart: (_) {
+                                    widget.onInteractionChange?.call(true);
+                                  },
+
+                                  onInteractionEnd: (_) {
+                                    widget.onInteractionChange?.call(false);
+                                    widget.onTransformChanged(
+                                      widget.controller.value,
+                                    );
+                                  },
+
+                                  child: Image.memory(
+                                    widget.imageBytes!,
+                                    fit: BoxFit.contain,
+                                  ),
                                 ),
                               )
                             : GestureDetector(
@@ -84,8 +84,18 @@ class _WantedPosterState extends State<WantedPoster> {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Icon(Icons.add_a_photo, color: Colors.brown.withOpacity(0.5), size: w * 0.15),
-                                    const Text("TAP TO ADD", style: TextStyle(color: Colors.brown, fontWeight: FontWeight.bold)),
+                                    Icon(
+                                      Icons.add_a_photo,
+                                      color: Colors.brown.withOpacity(0.5),
+                                      size: w * 0.15,
+                                    ),
+                                    const Text(
+                                      "TAP TO ADD",
+                                      style: TextStyle(
+                                        color: Colors.brown,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ),
@@ -93,34 +103,36 @@ class _WantedPosterState extends State<WantedPoster> {
                     ),
                   ),
 
-                  // 2. CORNICE (Trasparente al centro)
                   Positioned.fill(
                     child: IgnorePointer(
-                      child: Image.asset('assets/generic/wanted.png', fit: BoxFit.fill),
-                    ),
-                  ),
-
-                  // 3. TAGLIA
-                  Positioned(
-                    bottom: h * 0.12,
-                    left: 0,
-                    right: 0,
-                    child: IgnorePointer(
-                      child: Center(
-                        child: Text(
-                          "฿ ${widget.bounty} -",
-                          style: TextStyle(
-                            fontSize: w * 0.10,
-                            fontWeight: FontWeight.bold,
-                            color: const Color(0xFF3E2723).withOpacity(0.9),
-                            fontFamily: 'serif',
-                          ),
-                        ),
+                      child: Image.asset(
+                        'assets/generic/wanted.png',
+                        fit: BoxFit.fill,
                       ),
                     ),
                   ),
-                  
-                  // Bottone piccolo per cambiare immagine se già presente
+
+                  Align(
+                        alignment: const Alignment(0, 0.65),
+                        child: IgnorePointer(
+                          child: Text(
+                            "฿ ${widget.bounty} -",
+                            style: TextStyle(
+                              fontSize: w * 0.10,
+                              fontWeight: FontWeight.bold,
+                              color: const Color(0xFF3E2723).withOpacity(0.9),
+                              fontFamily: 'serif',
+                              shadows: const [
+                                Shadow(
+                                  color: Colors.black26,
+                                  blurRadius: 6,
+                                  offset: Offset(1, 2),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
                   if (widget.imageBytes != null)
                     Positioned(
                       top: h * 0.15,
