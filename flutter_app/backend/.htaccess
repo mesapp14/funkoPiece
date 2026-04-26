@@ -1,0 +1,8 @@
+# Impedisce l'accesso a file sensibili
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Impedisce il browsing delle cartelle
+Options -Indexes

@@ -9,11 +9,11 @@ class SearchBarWidget extends StatefulWidget {
   final bool isGrid;
 
   const SearchBarWidget({
-    Key? key,
+    super.key,
     required this.onSearch,
     required this.onToggle,
     required this.isGrid,
-  }) : super(key: key);
+  });
 
   @override
   State<SearchBarWidget> createState() => _SearchBarWidgetState();
