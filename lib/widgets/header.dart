@@ -11,7 +11,7 @@ class Header extends StatelessWidget {
         height: 60,
         alignment: Alignment.center,
         child: const Text(
-          "FunkoPiece",
+          "PiratePop",
           style: TextStyle(
             fontWeight: FontWeight.w900,
             letterSpacing: 4,

@@ -34,7 +34,7 @@ class FunkoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'FunkoPiece',
+      title: 'Pirate Pop',
       theme: ThemeData(
         useMaterial3: true,
         brightness: Brightness.dark,

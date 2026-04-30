@@ -23,7 +23,7 @@ if (!empty($data->email) && !empty($data->password)) {
 
     if ($user && password_verify($data->password, $user['password_hash'])) {
         $payload = [
-            "iss" => "FunkoPieceApp",
+            "iss" => "Pirate Pop",
             "iat" => time(),
             "exp" => time() + (3600 * 24 * 30), // Valido per 30 giorni
             "data" => [

@@ -31,7 +31,7 @@ class BottomNav extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           // Pass the specific image path and sizes for each standalone icon.
-          _item('ui/icon_helm.png', "Home", 0, 40, 40),
+          _item('ui/anchor_icon.png', "Home", 0, 40, 40),
           _item('ui/icon_scrolls.png', "Lista", 1, 40, 40),
           _item('ui/icon_chest.png', "Forziere", 2, 40, 40),
         ],
